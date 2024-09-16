@@ -2,10 +2,12 @@ import React from "react";
 
 import { workExperience } from "@/data";
 import { Button } from "./ui/MovingBorders";
+import FadeIn from "./ui/FadeIn";
 
 const Experience = () => {
   return (
     <section id="test">
+      <FadeIn>
       <div className="py-20 w-full">
         <h1 className="heading capitalize">
           Visa and Immigration 
@@ -44,6 +46,7 @@ const Experience = () => {
           ))}
         </div>
       </div>
+      </FadeIn>
     </section>
   );
 };

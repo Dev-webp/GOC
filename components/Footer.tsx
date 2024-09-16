@@ -2,10 +2,12 @@ import { FaLocationArrow } from "react-icons/fa6";
 
 import { socialMedia } from "@/data";
 import MagicButton from "./MagicButton";
+import FadeIn from "./ui/FadeIn";
 
 const Footer = () => {
   return (
     <footer className="w-full pt-20 pb-10">
+      <FadeIn>
       <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[45vw] text-center">
           Ready to unlock new opportunities and elevate your 
@@ -42,6 +44,7 @@ const Footer = () => {
           ))}
         </div>
       </div>
+      </FadeIn>
     </footer>
   );
 };

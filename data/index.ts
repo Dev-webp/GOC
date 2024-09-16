@@ -10,7 +10,7 @@ export const gridItems = [
     id: 1,
     title: "Earn points based on your age, education, work experience, language skills, and connections to Germany.",
     description: "Points-Based Visa System",
-    className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[80vh]",
+    className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[50vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
     img: "Untitled.png",
@@ -18,7 +18,7 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "We are very flexible with time zone communications",
+    title: "We are very flexible with different the time zone",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",

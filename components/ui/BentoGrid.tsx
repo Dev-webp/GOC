@@ -136,6 +136,11 @@ export const BentoGridItem = ({
             {title}
           </div>
 
+          {id === 1 && (
+            <div className="min-h-[90px] max-h-[150px]"></div>
+          )}
+
+          {id === 2 && <div className="mb-10"></div>}
           {/* for the github 3d globe */}
           {id === 2 && <GridGlobe />}
 

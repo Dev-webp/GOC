@@ -1,10 +1,12 @@
 import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { CanvasRevealEffect } from "./ui/CanvasRevealEffect";
+import FadeIn from "./ui/FadeIn";
 
 const Approach = () => {
   return (
     <section className="w-full py-20">
+      <FadeIn>
        <div className="w-full absolute left-0">
         <img
           src="/footer-grid.svg"
@@ -125,6 +127,7 @@ const Approach = () => {
           </Card>
         </div>
       </div>
+      </FadeIn>
     </section>
   );
 };
