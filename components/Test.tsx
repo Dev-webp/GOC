@@ -51,14 +51,14 @@ const Test = () => {
         <div className="flex flex-col lg:flex-row items-center text-center lg:text-left mt-10">
           <FadeRight>
             <div className="px-4 sm:px-6 lg:px-0 mb-10">
-              <h1 className="font-display text-6xl sm:text-6xl lg:text-8xl font-bold tracking-normal text-transparent bg-clip-text bg-gradient-to-r from-orange to-red-600 [text-wrap:balance]">
+              <h1 className="font-display text-4xl sm:text-4xl lg:text-6xl font-bold tracking-normal text-transparent bg-clip-text bg-gradient-to-r from-orange to-red-600 [text-wrap:balance]">
                 <span className="tracking-wider">Germany</span> Opportunity Card!
               </h1>
               <div className="mt-4 sm:mt-5">
                 <span className="block lg:hidden tracking-tight text-3xl font-normal text-neutral-100">
                   Unlock Your Future in Germany
                 </span>
-                <span className="hidden lg:block tracking-tight text-5xl font-normal text-neutral-100">
+                <span className="hidden lg:block tracking-tight text-4xl font-normal text-neutral-100">
                   Unlock Your Future in Germany
                 </span>
               </div>
