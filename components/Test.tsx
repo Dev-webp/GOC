@@ -10,7 +10,7 @@ const Test = () => {
   return (
     <div className="relative">
       {/* Navigation Bar */}
-      <div className="bg-black shadow-md flex items-center justify-between w-full fixed top-0 left-0 z-50 md:static">
+      <div className="bg-black shadow-md flex items-center justify-between w-full top-0 left-0 z-50 md:static">
         <div className="flex items-center space-x-4 w-full">
           {/* Container for logos */}
           <div className="flex flex-col md:flex-row items-center space-x-4 mx-auto md:mx-0 md:justify-start relative sm:top-4">

@@ -24,7 +24,7 @@ const Home = () => {
       <div className="max-w-7xl w-full">
         <Suspense fallback={<div></div>}>
           <FloatingNav navItems={navItems} />
-          <div className="mt-20">
+          <div className="mt-2">
             <Test />
           </div>
           <div className="md:mb-14">
