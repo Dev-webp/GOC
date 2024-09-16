@@ -68,7 +68,7 @@ const Test = () => {
                 <span className="font-bold text-neutral-400">
                   This points-based system allows qualified individuals to live and work in Germany without a prior job offer.
                 </span>
-                The Opportunity Card is part of Germany's strategy to address its skilled labor shortage and provide opportunities for global talent.
+                The Opportunity Card is part of Germanys strategy to address its skilled labor shortage and provide opportunities for global talent.
               </p>
             </div>
           </FadeRight>
