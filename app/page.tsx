@@ -27,10 +27,10 @@ const Home = () => {
           <div className="mt-10">
             <Test />
           </div>
-          <div className="md:mb-14">
+          <div className="mt-96 sm:mt-96 md:mt-0 lg:mt-0">
             <Hero />
           </div>
-          <div className="mt-28">
+          <div className="mt-28 sm:mt-0 md:mt-28 lg-mt-0  ">
             <Grid />
           </div>
           <Clients />

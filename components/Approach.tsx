@@ -3,6 +3,17 @@ import { AnimatePresence, motion } from "framer-motion";
 import { CanvasRevealEffect } from "./ui/CanvasRevealEffect";
 import FadeIn from "./ui/FadeIn";
 
+
+import { MdArrowForward } from "react-icons/md"; 
+
+const Arrow = () => (
+  <div className="flex justify-center items-center">
+    <MdArrowForward className="h-10 w-20 text-white" />
+  </div>
+);
+
+
+
 const Approach = () => {
   return (
     <section className="w-full py-20">
@@ -19,114 +30,84 @@ const Approach = () => {
         to Visa and Immigration process
       </h1>
       {/* Grid layout for the cards */}
-      <div className="my-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
-        <div className="flex justify-center items-start">
-          <Card
-            title="Planning & Strategy"
-            icon={<AceternityIcon order="Phase 1" />}
-            des="We'll collaborate to map out your website's goals, target audience, and key functionalities. We'll discuss things like site structure, navigation, and content requirements."
-          >
-            <CanvasRevealEffect
-              animationSpeed={5.1}
-              containerClassName="bg-emerald-900 rounded-2xl overflow-hidden"
-            />
-          </Card>
-        </div>
+     <div className="my-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
+  {/* First Card */}
+  <div className="flex justify-center items-start">
+    <Card
+      title="Planning & Strategy"
+      icon={<AceternityIcon order="Phase 1" />}
+      des="We'll collaborate to map out your website's goals, target audience, and key functionalities. We'll discuss things like site structure, navigation, and content requirements."
+    >
+      <CanvasRevealEffect
+        animationSpeed={5.1}
+        containerClassName="bg-emerald-900 rounded-2xl overflow-hidden"
+      />
+    </Card>
+  </div>
 
-        <div className="flex justify-center items-start">
-          {/* Uncomment if needed
-          <Card
-            title="Development & Progress Update"
-            icon={<AceternityIcon order="Phase 2" />}
-            des="Once we agree on the plan, I cue my lofi playlist and dive into coding. From initial sketches to polished code, I keep you updated every step of the way."
-          >
-            <CanvasRevealEffect
-              animationSpeed={3}
-              containerClassName="bg-pink-900 rounded-2xl overflow-hidden"
-              colors={[
-                [255, 166, 158],
-                [221, 255, 247],
-              ]}
-              dotSize={2}
-            />
-          </Card> 
-          */}
-        </div>
+  {/* Arrow between the two cards */}
+  <Arrow />
 
-        <div className="flex justify-center items-start">
-          <Card
-            title="Development & Launch"
-            icon={<AceternityIcon order="Phase 2" />}
-            des="This is where the magic happens! Based on the approved design, I'll translate everything into functional code, building your website from the ground up."
-          >
-            <CanvasRevealEffect
-              animationSpeed={3}
-              containerClassName="bg-emerald-900 rounded-2xl overflow-hidden"
-              colors={[[125, 211, 252]]}
-            />
-          </Card>
-        </div>
+  {/* Second Card */}
+  <div className="flex justify-center items-start">
+    <Card
+      title="Development & Launch"
+      icon={<AceternityIcon order="Phase 2" />}
+      des="This is where the magic happens! Based on the approved design, I'll translate everything into functional code, building your website from the ground up."
+    >
+      <CanvasRevealEffect
+        animationSpeed={3}
+        containerClassName="bg-emerald-900 rounded-2xl overflow-hidden"
+        colors={[[125, 211, 252]]}
+      />
+    </Card>
+  </div>
 
-        {/* Center Card */}
-        <div className="flex justify-center items-center lg:col-span-3">
-          <Card
-            title="Testing & Quality Assurance"
-            icon={<AceternityIcon order="Phase 3" />}
-            des="After development, we rigorously test the website to ensure everything works perfectly across all devices and browsers. Quality assurance is key to a successful launch."
-          >
-            <CanvasRevealEffect
-              animationSpeed={4}
-              containerClassName="bg-sky-600 rounded-2xl overflow-hidden"
-            />
-          </Card>
-        </div>
+  {/* Center Card */}
+  <div className="flex justify-center items-center lg:col-span-3">
+    <Card
+      title="Testing & Quality Assurance"
+      icon={<AceternityIcon order="Phase 3" />}
+      des="After development, we rigorously test the website to ensure everything works perfectly across all devices and browsers. Quality assurance is key to a successful launch."
+    >
+      <CanvasRevealEffect
+        animationSpeed={4}
+        containerClassName="bg-sky-600 rounded-2xl overflow-hidden"
+      />
+    </Card>
+  </div>
 
-        <div className="flex justify-center items-start">
-          <Card
-            title="Maintenance & Support"
-            icon={<AceternityIcon order="Phase 4" />}
-            des="Post-launch, we offer ongoing support and maintenance to ensure your website remains up-to-date and secure. We’re here to address any issues and make improvements as needed."
-          >
-            <CanvasRevealEffect
-              animationSpeed={3}
-              containerClassName="bg-emerald-900 rounded-2xl overflow-hidden"
-            />
-          </Card>
-        </div>
+  {/* Remaining Cards */}
+  <div className="flex justify-center items-start">
+    <Card
+      title="Maintenance & Support"
+      icon={<AceternityIcon order="Phase 4" />}
+      des="Post-launch, we offer ongoing support and maintenance to ensure your website remains up-to-date and secure. We’re here to address any issues and make improvements as needed."
+    >
+      <CanvasRevealEffect
+        animationSpeed={3}
+        containerClassName="bg-emerald-900 rounded-2xl overflow-hidden"
+      />
+    </Card>
+  </div>
 
-        <div className="flex justify-center items-start">
-          {/* Uncomment if needed
-          <Card
-            title="Development & Progress Update"
-            icon={<AceternityIcon order="Phase 2" />}
-            des="Once we agree on the plan, I cue my lofi playlist and dive into coding. From initial sketches to polished code, I keep you updated every step of the way."
-          >
-            <CanvasRevealEffect
-              animationSpeed={3}
-              containerClassName="bg-pink-900 rounded-2xl overflow-hidden"
-              colors={[
-                [255, 166, 158],
-                [221, 255, 247],
-              ]}
-              dotSize={2}
-            />
-          </Card>
-          */}
-        </div>
+  {/* Arrow between the cards */}
+  <Arrow />
 
-        <div className="flex justify-center items-start">
-          <Card
-            title="Client Feedback & Iterations"
-            icon={<AceternityIcon order="Phase 5" />}
-            des="We value your feedback and use it to make any necessary adjustments or iterations to the website. Your satisfaction is our priority, and we aim to exceed your expectations."
-          >
-            <CanvasRevealEffect
-              animationSpeed={3}
-              containerClassName="bg-emerald-900 rounded-2xl overflow-hidden"
-            />
-          </Card>
-        </div>
-      </div>
+  <div className="flex justify-center items-start">
+    <Card
+      title="Client Feedback & Iterations"
+      icon={<AceternityIcon order="Phase 5" />}
+      des="We value your feedback and use it to make any necessary adjustments or iterations to the website. Your satisfaction is our priority, and we aim to exceed your expectations."
+    >
+      <CanvasRevealEffect
+        animationSpeed={3}
+        containerClassName="bg-emerald-900 rounded-2xl overflow-hidden"
+      />
+    </Card>
+  </div>
+</div>
+
       </FadeIn>
     </section>
   );
