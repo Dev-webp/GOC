@@ -5,6 +5,7 @@ import Image from 'next/image';
 import imageLaptop from '../public/flag-2.png';
 import logo from '../public/logo-1.png'; 
 import firstLogo from '../public/first.png'; 
+import ContactForm from './ui/ContactForm';
 
 const Test = () => {
   return (
@@ -51,14 +52,14 @@ const Test = () => {
         <div className="flex flex-col lg:flex-row items-center text-center lg:text-left mt-10">
           <FadeRight>
             <div className="px-4 sm:px-6 lg:px-0 mb-10">
-              <h1 className="font-display text-6xl sm:text-6xl lg:text-8xl font-bold tracking-normal text-transparent bg-clip-text bg-gradient-to-r from-orange to-red-600 [text-wrap:balance]">
+              <h1 className="font-display text-6xl sm:text-6xl lg:text-7xl font-bold tracking-tighter uppercase text-transparent bg-clip-text bg-gradient-to-r from-orange to-red-600 [text-wrap:balance]">
                 <span className="tracking-wider">Germany</span> Opportunity Card!
               </h1>
               <div className="mt-4 sm:mt-5">
-                <span className="block lg:hidden tracking-tight text-3xl font-normal text-neutral-100">
+                <span className="block lg:hidden tracking-tight text-3xl font-normal uppercase text-neutral-100">
                   Unlock Your Future in Germany
                 </span>
-                <span className="hidden lg:block tracking-tight text-5xl font-normal text-neutral-100">
+                <span className="hidden lg:block tracking-wider text-4xl font-normal uppercase text-neutral-100">
                   Unlock Your Future in Germany
                 </span>
               </div>
@@ -66,20 +67,21 @@ const Test = () => {
                 The Germany Opportunity Card is a newly introduced visa scheme by the German government,
                 designed to attract skilled professionals from non-EU countries.
                 <span className="font-bold text-neutral-400">
-                  This points-based system allows qualified individuals to live and work in Germany without a prior job offer.
+                This points-based system allows qualified individuals to live and work in Germany without a prior job offer.
                 </span>
-                The Opportunity Card is part of Germanys strategy to address its skilled labor shortage and provide opportunities for global talent.
+                The Opportunity Card is a part of Germanys strategy to address its skilled labor shortage and provide opportunities for global talent.
               </p>
             </div>
           </FadeRight>
           
           <FadeIn className="hidden lg:flex w-[33.75rem] flex-none lg:w-[33.75rem]">
-            <Image
+            {/* <Image
               src={imageLaptop}
               sizes="(min-width: 1024px) 41rem, 31rem"
               className="w-full max-w-[60rem]  ml-12"
               alt="Laptop Image"
-            />
+            /> */}
+            <ContactForm/>
           </FadeIn>
         </div>
       </div>

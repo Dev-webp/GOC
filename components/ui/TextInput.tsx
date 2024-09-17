@@ -59,7 +59,10 @@ const TextInput: React.FC<TextInputProps> = ({
       />
       <label
         htmlFor={id}
-        className="pointer-events-none absolute left-4 top-1/2 -mt-2 origin-left text-sm text-neutral-500 transition-all duration-200 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:font-semibold peer-focus:text-neutral-950 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-placeholder-shown:font-normal peer-placeholder-shown:text-neutral-500 peer-not-placeholder-shown:-translate-y-4 peer-not-placeholder-shown:scale-75 peer-not-placeholder-shown:font-semibold peer-not-placeholder-shown:text-neutral-950"
+        className={`pointer-events-none absolute left-4 top-1/2 -mt-2 origin-left text-sm text-neutral-500 transition-all duration-200 transform
+          peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-placeholder-shown:font-normal peer-placeholder-shown:text-neutral-500 
+          peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:font-semibold peer-focus:text-neutral-950
+          ${value ? '-translate-y-4 scale-75 font-semibold text-neutral-950' : ''}`} // Keeps label above if there's a value
       >
         {label}
       </label>

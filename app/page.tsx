@@ -7,15 +7,15 @@ import { navItems } from "@/data";
 const loadableComponent = <T extends ComponentType<any>>(importFn: () => Promise<{ default: T }>) =>
   lazy(() => importFn().then(module => ({ default: module.default as T })));
 
-const Hero = loadableComponent(() => import('@/components/Hero'));
-const Grid = loadableComponent(() => import('@/components/Grid'));
-const Footer = loadableComponent(() => import('@/components/Footer'));
-const Clients = loadableComponent(() => import('@/components/Clients'));
-const Approach = loadableComponent(() => import('@/components/Approach'));
-const Experience = loadableComponent(() => import('@/components/Experience'));
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 const Test = loadableComponent(() => import('@/components/Test'));
+const Hero = loadableComponent(() => import('@/components/Hero'));
+const Grid = loadableComponent(() => import('@/components/Grid'));
+const Clients = loadableComponent(() => import('@/components/Clients'));
+const Experience = loadableComponent(() => import('@/components/Experience'));
+const Approach = loadableComponent(() => import('@/components/Approach'));
 const Form = loadableComponent(() => import('@/components/Form'));
+const Footer = loadableComponent(() => import('@/components/Footer'));
 const WhatsAppIcon = loadableComponent(() => import('@/components/WhatsAppIcon'));
 
 const Home = () => {
@@ -24,7 +24,7 @@ const Home = () => {
       <div className="max-w-7xl w-full">
         <Suspense fallback={<div></div>}>
           <FloatingNav navItems={navItems} />
-          <div className="mt-20">
+          <div className="mt-10">
             <Test />
           </div>
           <div className="md:mb-14">
@@ -37,7 +37,9 @@ const Home = () => {
           <Experience />
           <Approach />
           <Form />
+          <div className='mb-8'>
           <Footer />
+          </div>
           <WhatsAppIcon />
         </Suspense>
       </div>

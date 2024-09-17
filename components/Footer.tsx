@@ -26,11 +26,11 @@ const Footer = () => {
         </a>
       </div>
       <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
-        <p className="md:text-base text-sm md:font-normal font-light">
+        <p className="md:text-base text-sm flex justify-center w-full md:font-normal font-light">
           Copyright © 2024 VJC Overseas
         </p>
 
-        <div className="flex items-center md:gap-3 gap-6">
+        {/* <div className="flex items-center md:gap-3 gap-6">
           {socialMedia.map((info: any) => (
             <a
               key={info.id}
@@ -42,7 +42,7 @@ const Footer = () => {
               <img src={info.img} alt={info.alt || "Social Media Icon"} width={20} height={20} />
             </a>
           ))}
-        </div>
+        </div> */}
       </div>
       </FadeIn>
     </footer>

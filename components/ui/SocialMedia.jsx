@@ -12,11 +12,6 @@ import {
 
 export const SocialMediaProfiles = [
     {
-        title: "Youtube",
-        href: "https://www.youtube.com/@vjcoverseas9434",
-        icon: BsYoutube,
-    },
-    {
         title: "Instagram",
         href: "https://www.instagram.com/vjc_overseas_bangalore?utm_source=qr&igsh=MXZzNXY3dGV1YXg1bw== ",
         icon: BsInstagram,
@@ -32,10 +27,15 @@ export const SocialMediaProfiles = [
         icon: BsTwitter
     },
     {
-        title: "Whatsapp",
-        href: "https://wa.me/918970667999?text=Hello%2C%20I%20need%20more%20information",
-        icon: BsWhatsapp,
+        title: "Youtube",
+        href: "https://www.youtube.com/@vjcoverseas9434",
+        icon: BsYoutube,
     },
+    // {
+    //     title: "Whatsapp",
+    //     href: "https://wa.me/918970667999?text=Hello%2C%20I%20need%20more%20information",
+    //     icon: BsWhatsapp,
+    // },
 ];
 
 const SocialMedia = ({ className, invert = false }) => {
