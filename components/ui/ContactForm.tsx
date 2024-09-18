@@ -8,25 +8,27 @@ type FormData = {
   name: string;
   email: string;
   phone: string;
-  message: string;
   city: string;
   qualification: string;
   service: string;
   branch: string;
   maritalStatus: string;
+  message: string;
 };
+
+const GOOGLE_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSfo7shkMQbOZr7gc33gBIXyl2WCqywXwabhPk1yVwywudiYHg/formResponse";
 
 const ContactForm: React.FC = () => {
   const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
     phone: "",
-    message: "",
     city: "",
     qualification: "",
     service: "",
     branch: "",
     maritalStatus: "",
+    message: "",
   });
 
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -41,31 +43,42 @@ const ContactForm: React.FC = () => {
   const handleSubmit = useCallback(
     async (e: React.FormEvent) => {
       e.preventDefault();
+
+      const formBody = new URLSearchParams({
+        "entry.1491673830": encodeURIComponent(formData.name),           // Name field
+        "entry.500009779": encodeURIComponent(formData.email),          // Email field
+        "entry.1714164824": encodeURIComponent(formData.phone),         // Phone field
+        "entry.1347024827": encodeURIComponent(formData.city),          // City field
+        "entry.1880711587": encodeURIComponent(formData.qualification), // Qualification field
+        "entry.1016709080": encodeURIComponent(formData.service),       // Service field
+        "entry.1080176603": encodeURIComponent(formData.maritalStatus), // Marital Status field
+        "entry.862314696": encodeURIComponent(formData.branch),         // Branch field
+        "entry.266368811": encodeURIComponent(formData.message),        // Message field
+      });
+
       try {
-        const response = await fetch("https://formspree.io/f/mzzpqgrw", {
+        const response = await fetch(GOOGLE_FORM_URL, {
           method: "POST",
+          mode: "no-cors", // Google Forms submission
           headers: {
-            "Content-Type": "application/json",
+            "Content-Type": "application/x-www-form-urlencoded",
           },
-          body: JSON.stringify(formData),
+          body: formBody.toString(),
         });
-        if (response.ok) {
-          setFormData({
-            name: "",
-            email: "",
-            phone: "",
-            message: "",
-            city: "",
-            qualification: "",
-            service: "",
-            branch: "",
-            maritalStatus: "",
-          });
-          setIsSubmitted(true);
-        } else {
-          console.error("Form submission error:", response.statusText);
-          setIsSubmitted(false);
-        }
+
+        // Google Forms does not provide a reliable success response with "no-cors" mode
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          city: "",
+          qualification: "",
+          service: "",
+          branch: "",
+          maritalStatus: "",
+          message: "",
+        });
+        setIsSubmitted(true);
       } catch (error) {
         console.error("Form submission error:", error);
         setIsSubmitted(false);
@@ -75,7 +88,7 @@ const ContactForm: React.FC = () => {
   );
 
   return (
-    <form
+      <form
       className="isolate mt-4 space-y-4 rounded-2xl bg-white p-6 max-w-[50rem] mb-24 ml-6"
       onSubmit={handleSubmit}
     >

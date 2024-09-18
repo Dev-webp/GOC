@@ -1,11 +1,12 @@
 import { gridItems } from "@/data";
 import { BentoGrid, BentoGridItem } from "./ui/BentoGrid";
 import FadeIn from "./ui/FadeIn";
+import FadeRight from "./ui/FadeRight";
 
 const Grid: React.FC = () => {
   return (
     <section id="about">
-      <FadeIn>
+      <FadeRight>
       <BentoGrid className="w-full py-20">
         {gridItems.map((item) => (
           <BentoGridItem
@@ -21,7 +22,7 @@ const Grid: React.FC = () => {
           />
         ))}
       </BentoGrid>
-      </FadeIn>
+      </FadeRight>
     </section>
   );
 };

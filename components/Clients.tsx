@@ -3,10 +3,12 @@
 import React from "react";
 import { companies, testimonials } from "@/data";
 import { InfiniteMovingCards } from "./ui/InfiniteCards";
+import FadeIn from "./ui/FadeIn";
 
 const Clients = () => {
   return (
     <section id="testimonials" className="py-20">
+      <FadeIn>
       <h1 className="heading">
         Kind words from
         <span className="text-gradient"> Satisfied clients</span>
@@ -23,6 +25,7 @@ const Clients = () => {
           />
         </div>
       </div>
+      </FadeIn>
     </section>
   );
 };

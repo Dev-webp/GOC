@@ -15,7 +15,7 @@ export const InfiniteMovingCards = ({
     name: string;
     title: string;
   }[];
-  direction?:  "right" | "left" ;
+  direction?: "right" | "left";
   speed?: "fast" | "normal" | "slow";
   pauseOnHover?: boolean;
   className?: string;
@@ -39,7 +39,7 @@ export const InfiniteMovingCards = ({
     if (container) {
       container.style.setProperty(
         "--animation-direction",
-        direction === "left" ? "forwards" : "reverse"
+        direction === "left" ? "reverse" : "forwards"
       );
       container.style.setProperty(
         "--animation-duration",
@@ -63,6 +63,11 @@ export const InfiniteMovingCards = ({
           "animate-scroll",
           pauseOnHover && "hover:[animation-play-state:paused]"
         )}
+        style={{
+          // Ensure the correct direction based on the --animation-direction property
+          animation: `scroll ${speed === "fast" ? "20s" : speed === "normal" ? "40s" : "80s"} linear infinite`,
+          flexDirection: direction === "left" ? "row" : "row-reverse",
+        }}
       >
         {items.map((item, idx) => (
           <li

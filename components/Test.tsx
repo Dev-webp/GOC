@@ -47,7 +47,7 @@ const Test = () => {
 
         {/* Contact Button for Small Screens */}
         {isCallNowVisible && (
-          <div className="block md:hidden fixed bottom-0 left-0 w-full bg-black p-4 text-center">
+          <div className="block md:hidden fixed top-36 left-0 w-full bg-slate-900 p-4 text-center">
             <a
               href="tel:8970667999"  // This triggers the call
               className="text-white font-semibold uppercase tracking-widest text-sm"
