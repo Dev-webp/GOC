@@ -25,6 +25,7 @@ const Test = () => {
                 width={60} // Adjust width for smaller screens
                 height={20} // Adjust height for smaller screens
                 className="object-contain z-10"
+                style={{ width: 'auto', height: 'auto' }} 
               />
               <Image 
                 src={firstLogo} 
@@ -32,6 +33,7 @@ const Test = () => {
                 width={120} // Adjust width for smaller screens
                 height={30} // Adjust height for smaller screens
                 className="object-contain z-10"
+                style={{ width: 'auto', height: 'auto' }} 
               />
             </div>
           </div>
@@ -115,12 +117,6 @@ const Test = () => {
         <div className="block md:hidden lg:hidden bg-black h-10"></div>
 
           <FadeIn className="hidden lg:flex w-[33.75rem] flex-none lg:w-[33.75rem]">
-            {/* <Image
-              src={imageLaptop}
-              sizes="(min-width: 1024px) 41rem, 31rem"
-              className="w-full max-w-[60rem]  ml-12"
-              alt="Laptop Image"
-            /> */}
             <ContactForm/>
           </FadeIn>
 

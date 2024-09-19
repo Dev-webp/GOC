@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css"; // Ensure this is minified in production
 import { ThemeProvider } from "./provider";
+import { Analytics } from "@vercel/analytics/react"; // Import the Analytics component
 
 const inter = Inter({ subsets: ["latin"], display: "swap" });
 
@@ -28,6 +29,7 @@ export default function RootLayout({
           // Remove disableTransitionOnChange if not needed
         >
           {children}
+          <Analytics /> {/* Include the Analytics component here */}
         </ThemeProvider>
       </body>
     </html>
