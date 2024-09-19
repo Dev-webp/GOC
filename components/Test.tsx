@@ -80,12 +80,12 @@ const Test = () => {
         <div className="flex flex-col lg:flex-row items-center text-center lg:text-left mt-10">
           <FadeRight>
             <div className="px-4 sm:px-6 lg:px-0 mb-10">
-              <h1 className="font-display text-6xl sm:text-6xl lg:text-7xl font-bold tracking-tighter uppercase text-transparent bg-clip-text bg-gradient-to-r from-orange to-red-600 [text-wrap:balance]">
+              <h1 className="font-display text-5xl sm:text-5xl lg:text-7xl font-bold tracking-tighter uppercase text-transparent bg-clip-text bg-gradient-to-r from-orange to-red-600 [text-wrap:balance]">
                 <span className="tracking-wider">Germany</span> Opportunity Card!
               </h1>
                <div className="block md:hidden lg:hidden bg-black h-1"></div>
               <div className="mt-4 sm:mt-5">
-                <span className="block lg:hidden tracking-tight text-3xl font-normal uppercase text-neutral-100">
+                <span className="block lg:hidden tracking-tight text-2xl font-normal uppercase text-neutral-100">
                   Unlock Your Future in Germany
                 </span>
                 <span className="hidden lg:block tracking-wider text-3xl font-normal uppercase text-neutral-100">
@@ -93,7 +93,7 @@ const Test = () => {
                 </span>
               </div>
               <div className="block md:hidden lg:hidden bg-black h-2"></div>
-              <p className="mt-4 sm:mt-6 tracking-tight text-base sm:text-sm font-semibold text-neutral-500 break-words">
+              <p className="mt-4 sm:mt-6 tracking-tight text-xs sm:text-xs md:text-sm lg:text-sm font-semibold text-neutral-500 break-words">
                 The Germany Opportunity Card is a newly introduced visa scheme by the German government,
                 designed to attract skilled professionals from non-EU countries.
                 <span className="font-bold text-neutral-400">
