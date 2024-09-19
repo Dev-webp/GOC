@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css"; // Ensure this is minified in production
 import { ThemeProvider } from "./provider";
 import { Analytics } from "@vercel/analytics/react"; // Import the Analytics component
+import { SpeedInsights } from "@vercel/speed-insights/next"; // Import the SpeedInsights component
 
 const inter = Inter({ subsets: ["latin"], display: "swap" });
 
@@ -30,6 +31,7 @@ export default function RootLayout({
         >
           {children}
           <Analytics /> {/* Include the Analytics component here */}
+          <SpeedInsights /> {/* Include the SpeedInsights component here */}
         </ThemeProvider>
       </body>
     </html>
