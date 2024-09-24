@@ -185,7 +185,7 @@ const ContactPage: React.FC = () => {
                   {/* Third Row: Qualification and Service */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="border-r border-neutral-400 pr-4"> {/* Added border-right */}
-                      <label className="block text-sm font-medium text-neutral-600">Select Qualification</label>
+                      <label className="block text-sm font-medium text-neutral-600">Education</label>
                       <select
                         name="qualification"
                         value={formData.qualification}
@@ -202,7 +202,7 @@ const ContactPage: React.FC = () => {
                       </select>
                     </div>
                     <div>
-                      <label className="block text-sm font-medium text-neutral-600">Select Service</label>
+                      <label className="block text-sm font-medium text-neutral-600">Services</label>
                       <select
                         name="service"
                         value={formData.service}

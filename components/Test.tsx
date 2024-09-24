@@ -8,6 +8,7 @@ import firstLogo from '../public/first.png';
 import ContactForm from './ui/ContactForm';
 import MagicButton from './MagicButton';
 import { FaLocationArrow } from 'react-icons/fa6';
+import { BsTelephoneForward } from "react-icons/bs";
 
 const Test = () => {
   const [isCallNowVisible, setIsCallNowVisible] = useState(false);
@@ -38,6 +39,10 @@ const Test = () => {
             </div>
           </div>
         </div>
+
+        <div className='mt-8 text-3xl hidden md:block'>
+          <BsTelephoneForward />
+        </div>
         
         {/* Toggle Button for Small Screens */}
         <button
@@ -49,19 +54,22 @@ const Test = () => {
 
         {/* Contact Button for Small Screens */}
         {isCallNowVisible && (
-          <div className="block md:hidden fixed top-36 left-0 w-full bg-slate-900 p-4 text-center">
-            <a
-              href="tel:8970667999"  // This triggers the call
-              className="text-white font-semibold uppercase tracking-widest text-sm"
-            >
-              CALL NOW<br />
-              <span className='lining-nums tracking-normal font-semibold text-gray-300'>8970667999</span>
-            </a>
-          </div>
-        )}
+            <div className="block md:hidden fixed top-36 left-0 w-full bg-slate-900 p-4 text-center">
+              <a
+                href="tel:8970667999"  // This triggers the call
+                className="text-white font-semibold uppercase tracking-widest text-sm flex items-center justify-center" // Flexbox for alignment
+              >
+                <BsTelephoneForward className="text-white text-xl mr-2" /> {/* Margin to the right of the icon */}
+                
+                <br />
+                <span className='lining-nums tracking-normal font-bold text-lg text-gray-100'>8970667999</span>
+              </a>
+            </div>
+          )}
+
 
         {/* Contact Button hidden on larger devices */}
-        <div className="hidden md:flex items-center py-1 px-4 rounded-md mt-10">
+        <div className="hidden md:flex items-center py-1 px-2 rounded-md mt-8">
           <a
             href="tel:8970667999"  // This triggers the call
             className="text-white font-semibold uppercase tracking-widest text-sm"

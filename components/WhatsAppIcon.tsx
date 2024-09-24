@@ -7,7 +7,7 @@ const WhatsAppIcon: React.FC = () => {
       href="https://wa.me/918970667999?text=Hello%2C%20I%20need%20more%20information"
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-10 right-11 z-50 bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition"
+      className="fixed bottom-11 right-11 z-50 bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition"
       aria-label="WhatsApp"
     >
       <BsWhatsapp size={24} />

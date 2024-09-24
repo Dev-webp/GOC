@@ -11,7 +11,8 @@ export const TextGenerateEffect = ({
   className?: string;
 }) => {
   const [scope, animate] = useAnimate();
-  let wordsArray = words.split(" ");
+  const wordsArray = words.split(" ");
+
   useEffect(() => {
     console.log(wordsArray);
     animate(
@@ -21,10 +22,10 @@ export const TextGenerateEffect = ({
       },
       {
         duration: 2,
-        delay: stagger(0.2),
+        delay: stagger(0.5),
       }
     );
-  }, [scope.current]);
+  }, [animate, wordsArray]);
 
   const renderWords = () => {
     return (
@@ -33,9 +34,9 @@ export const TextGenerateEffect = ({
           return (
             <motion.span
               key={word + idx}
-              // change here if idx is greater than 3, change the text color to #CBACF9
-              className={` ${idx > -1 ? "text-gradient" : "dark:text-white text-black"
-                } opacity-0`}
+              className={` ${
+                idx > -1 ? "text-gradient" : "dark:text-white text-black"
+              } opacity-0`}
             >
               {word}{" "}
             </motion.span>
@@ -47,10 +48,8 @@ export const TextGenerateEffect = ({
 
   return (
     <div className={cn("font-bold", className)}>
-      {/* mt-4 to my-4 */}
       <div className="my-4">
-        {/* remove  text-2xl from the original */}
-        <div className=" dark:text-white text-black leading-snug tracking-tight">
+        <div className="dark:text-white text-black leading-snug tracking-tight">
           {renderWords()}
         </div>
       </div>

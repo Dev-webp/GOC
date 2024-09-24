@@ -157,7 +157,7 @@ const ContactForm: React.FC = () => {
             <option value="">Education</option>
             <option value="10th">10th</option>
             <option value="12th">12th</option>
-            <option value="bachelors">Bachelors Degree</option>
+            <option value="bachelors">Bachelors-Degree</option>
             <option value="masters">Masters</option>
             <option value="phd">PhD</option>
           </select>
@@ -171,9 +171,9 @@ const ContactForm: React.FC = () => {
             required
           >
             <option value="">Services</option>
-            <option value="PR">PR Visa</option>
-            <option value="student">Student Visa</option>
-            <option value="jobSeeker">Job Seeker Visa</option>
+            <option value="PR">PR-Visa</option>
+            <option value="student">Student-Visa</option>
+            <option value="jobSeeker">Job-Seeker-Visa</option>
           </select>
         </div>
       </div>
