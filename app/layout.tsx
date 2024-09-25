@@ -10,7 +10,10 @@ const inter = Inter({ subsets: ["latin"], display: "swap" });
 export const metadata: Metadata = {
   title: "Germany Opportunity Card",
   description: "Germany Opportunity Card",
-  // Add more metadata fields as necessary
+  keywords: "Germany, Opportunity Card, visa, immigration, work, travel",
+  authors: [{ name: "VJC Overseas" }],
+  creator: "VJC Overseas",
+  publisher: "VJC Overseas",
 };
 
 export default function RootLayout({

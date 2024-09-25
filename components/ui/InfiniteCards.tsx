@@ -14,6 +14,7 @@ export const InfiniteMovingCards = ({
     quote: string;
     name: string;
     title: string;
+    des: string;
   }[];
   direction?: "right" | "left";
   speed?: "fast" | "normal" | "slow";
@@ -90,6 +91,9 @@ export const InfiniteMovingCards = ({
                 <span className="flex flex-col gap-1">
                   <span className="text-xl font-bold leading-[1.6] text-white">
                     {item.name}
+                  </span>
+                  <span className="text-sm leading-[1.6] text-white-200 font-normal">
+                    {item.des}
                   </span>
                   <span className="text-sm leading-[1.6] text-white-200 font-normal">
                     {item.title}

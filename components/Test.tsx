@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import FadeIn from '@/components/ui/FadeIn';
 import FadeRight from '@/components/ui/FadeRight';
 import Image from 'next/image';
-import imageLaptop from '../public/flag-2.png';
 import logo from '../public/logo-1.png'; 
 import firstLogo from '../public/first.png'; 
 import ContactForm from './ui/ContactForm';
@@ -74,8 +73,8 @@ const Test = () => {
             href="tel:8970667999"  // This triggers the call
             className="text-white font-semibold uppercase tracking-widest text-sm"
           >
-            CALL NOW<br />
-            <span className='lining-nums tracking-normal font-semibold text-gray-300'>8970667999</span>
+            <span className='ml-3'>Contact</span><br />
+            <span className='lining-nums tracking-normal font-semibold text-gray-300 text-xs'>+91<span className='text-black'>#</span>8970667999</span>
           </a>
         </div>
       </div>
@@ -101,10 +100,10 @@ const Test = () => {
                 </span>
               </div>
               <div className="block md:hidden lg:hidden bg-black h-2"></div>
-              <p className="mt-4 sm:mt-6 tracking-tight text-xs sm:text-xs md:text-sm lg:text-sm font-semibold text-neutral-500 break-words">
+              <p className="mt-4 sm:mt-6 tracking-tight text-xs sm:text-xs md:text-sm lg:text-sm font-semibold text-neutral-400 break-words">
                 The Germany Opportunity Card is a newly introduced visa scheme by the German government,
                 designed to attract skilled professionals from non-EU countries.
-                <span className="font-bold text-neutral-400">
+                <span className="font-bold text-neutral-300">
                 This points-based system allows qualified individuals to live and work in Germany without a prior job offer.
                 </span>
                 The Opportunity Card is the part of Germanys strategy to address its skilled labor shortage and provide opportunities globally.

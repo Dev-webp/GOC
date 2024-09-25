@@ -7,11 +7,11 @@ import FadeIn from "./ui/FadeIn";
 
 const Clients = () => {
   return (
-    <section id="testimonials" className="py-20">
+    <section id="testimonials" className="py-32">
       <FadeIn>
-      <h1 className="heading">
-        Kind words from
-        <span className="text-gradient"> Satisfied clients</span>
+      <h1 className="heading uppercase">
+        Job Opportunities and Salaries with the <br/>
+        <span className="text-gradient"> Germany Opportunity Card</span>
       </h1>
 
       <div className="flex flex-col items-center max-lg:mt-10">

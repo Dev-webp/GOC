@@ -1,5 +1,5 @@
 export const navItems = [
-  { name: "GOC", link: "#why" },
+  { name: "Benefits", link: "#why" },
   { name: "About", link: "#about" },
   { name: "Requirements", link: "#test" },
   { name: "Contact", link: "#contact" },
@@ -8,50 +8,61 @@ export const navItems = [
 export const gridItems = [
   {
     id: 1,
-    title: "Earn points based on your age, education, work experience, language skills, and connections to Germany.",
-    description: "Points-Based Visa System",
-    className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[50vh]",
-    imgClassName: "w-full h-full",
-    titleClassName: "justify-end",
-    img: "Untitled.png",
-    spareImg: "",
-  },
-  {
-    id: 2,
-    title: "We are very flexible with different the time zone",
+    title: "1.Qualifications (Up to 6 points)",
     description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-    imgClassName: "",
-    titleClassName: "justify-start",
-    img: "",
-    spareImg: "",
-  },
-  {
-    id: 3,
-    title: "Job Search Flexibility",
-    description: "Points-Based Visa System",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-    imgClassName: "",
+    className: "h-24",
+    imgClassName: "w-full h-full",
     titleClassName: "justify-center",
     img: "",
     spareImg: "",
   },
   {
-    id: 4,
-    title: "Start your journey to work and live in Germany with our professional support.",
+    id: 2,
+    title: "2. Work Experience (Up to 6 points)",
     description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
+    className: "h-24",
+    imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
+    titleClassName: "justify-center",
+    img: "",
+    spareImg: "",
+  },
+  {
+    id: 3,
+    title: "3. Language Skills (Up to 4 points)",
+    description: "",
+    className: "h-24",
     imgClassName: "",
-    titleClassName: "justify-start",
+    titleClassName: "justify-center",
+    img: "",
+    spareImg: "",
+  },
+  
+  {
+    id: 4,
+    title: "4. Age (Up to 3 points)",
+    description: "",
+    className: "h-24",
+    imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
+    titleClassName: "justify-center md:justify-start lg:justify-center",
     img: "",
     spareImg: "",
   },
 
   {
     id: 5,
-    title: "Work in Germany and eventually qualify for permanent residency, securing your future in one of Europes strongest economies",
+    title: "5. Ties to Germany (Up to 2 points)",
+    description: "",
+    className: "h-24",
+    imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
+    titleClassName: "justify-center md:justify-start lg:justify-center",
+    img: "",
+    spareImg: "",
+  },
+   {
+    id: 7,
+    title: "6. Financial Stability (Mandatory)",
     description: "Pathway to Permanent Residency",
-    className: "md:col-span-3 md:row-span-2",
+    className: "h-24",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
     img: "",
@@ -59,9 +70,9 @@ export const gridItems = [
   },
   {
     id: 6,
-    title: "Do you want to start a process together?",
+    title: "Check your points here!",
     description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
+    className: "lg:col-span-2 md:col-span-3 md:row-span-2 h-40 uppercase",
     imgClassName: "",
     titleClassName: "justify-center md:max-w-full max-w-60 text-center",
     img: "",
@@ -72,62 +83,88 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
+    title: "Valid Passport",
+    
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/ui.yoom.com",
+    title: "Proof of Qualifications",
+
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/ui.aiimg.com",
+    title: "Proof of Work Experience",
+ 
   },
   {
     id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/ui.apple.com",
+    title: "Language Proficiency Certificate",
+
+  },
+   {
+    id: 5,
+    title: "Financial Proof",
+
+  },
+   {
+    id: 6,
+    title: "Curriculum Vitae (CV)",
+
+  },
+   {
+    id: 7,
+    title: "Health Insurance",
+
+  },
+   {
+    id: 8,
+    title: "Proof of Accommodation",
+
   },
 ];
 
 export const testimonials = [
     {
       quote: 
-        "Working with VJCOverseas Visa and Immigration Consultancy has been an outstanding experience. Their attention to detail, professionalism, and unwavering commitment to helping me secure my student visa were remarkable. VJCOverseas went above and beyond to ensure that every step of the process was smooth and efficient.",
-      name: "Thompson",
-      title: "Student Visa Applicant"
+        "Healthcare professionals are in high demand due to Germany's aging population and need for skilled medical staff.",
+      name: "Healthcare Professionals",
+      title: "Roles: Doctors, Nurses, Medical Technicians, Physiotherapists",
+      des: "Average Salary: €40,000 – €85,000 per year",
     },
     {
       quote: 
-        "Partnering with VJCOverseas Visa and Immigration Consultancy for my job seeker visa was a transformative experience. Their expertise and dedication made the complex process straightforward and stress-free. From initial consultation to final approval, VJCOverseas demonstrated exceptional professionalism and support.",
-      name: "Alex Martinez",
-      title: "Job Seeker Visa Applicant"
+        "Germany is a tech hub with high demand for skilled IT professionals in areas like software development, data science, and artificial intelligence.",
+      name: "Information Technology (IT) Professionals",
+      title: "Roles: Software Developers, IT Consultants, Data Analysts, AI Specialists",
+      des: "Average Salary: €50,000 – €70,000 per year"
     },
     {
       quote: 
-        "Collaborating with VJCOverseas Visa and Immigration Consultancy for resume marketing was an exceptional experience. Their expertise in crafting standout resumes and personalized approach helped me significantly enhance my job application materials. The team's commitment to excellence and attention to detail were impressive.",
-      name: "Emily Clark",
-      title: "Resume Marketing Client"
+        "Germany is known for its engineering excellence, especially in fields like automotive and industrial engineering.",
+      name: "Engineers",
+      title: "Roles: Mechanical Engineers, Electrical Engineers, Civil Engineers, Automotive Engineers",
+      des: "Average Salary: €45,000 – €65,000 per year",
     },
     {
       quote: 
-        "My experience with VJCOverseas Visa and Immigration Consultancy for obtaining a tourist visa was exceptional. Their thorough and professional approach made the application process smooth and hassle-free. The team's prompt responses and detailed guidance ensured that every aspect of my application was handled with care.",
-      name: "John Smith",
-      title: "Tourist Visa Applicant"
+        "Germany’s robust financial sector offers roles for finance professionals with expertise in accounting, investment, and financial planning.",
+      name: "Finance and Accounting Experts",
+      title: "Roles: Accountants, Financial Analysts, Risk Managers",
+      des: "Average Salary: €50,000 – €80,000 per year",
+    },
+     {
+      quote: 
+        "Skilled trades are in high demand as Germany’s infrastructure and manufacturing industries require qualified professionals.",
+      name: "Skilled Tradespeople",
+      title: "Roles: Electricians, Plumbers, Welders, Mechanics",
+      des: "Average Salary: €30,000 – €45,000 per year",
+    },
+     {
+      quote: 
+        "Germany is a global leader in scientific research and innovation, offering numerous opportunities in R&D.",
+      name: "Scientists and Researchers",
+      title: "Roles: Chemists, Biologists, Researchers in Technology and Innovation",
+      des: "Average Salary: €50,000 – €80,000 per year",
     },
 
 ];
@@ -168,29 +205,43 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Age Requirement",
-    desc: "Applicants should ideally be under 35 years of age",
+    title: "Skilled Professionals",
+    desc: "You must have recognized qualifications in your field, such as a university degree or vocational training that meets Germany's standards.",
     className: "md:col-span-2",
     thumbnail: "/age.png",
   },
   {
     id: 2,
-    title: "Educational Qualifications",
-    desc: "Hold a recognized academic or vocational qualification",
-    className: "md:col-span-2", // change to md:col-span-2
+    title: "Relevant Work Experience",
+    desc: "Applicants should have at least 3 years of work experience in their industry to demonstrate expertise and the ability to contribute to the German job market.",
+    className: "md:col-span-2", 
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
-    title: "Professional Experience",
-    desc: "At least three years of relevant work experience in your field.",
-    className: "md:col-span-2", // change to md:col-span-2
+    title: "Age Criteria",
+    desc: "The Opportunity Card is aimed at professionals under 35 years old, though exceptions may be made for those with specialized skills.",
+    className: "md:col-span-2", 
     thumbnail: "/exp3.svg",
   },
   {
     id: 4,
-    title: "Language Proficiency",
-    desc: "Basic knowledge of German (A1 level) or strong English language skills.",
+    title: "Basic German or English Language Skills",
+    desc: "Proficiency in German or English is necessary for job opportunities and integration into the local work environment.",
+    className: "md:col-span-2",
+    thumbnail: "/preview-lan.png",
+  },
+   {
+    id: 5,
+    title: " Financial Stability",
+    desc: "Applicants must show proof of sufficient financial means to support themselves during their stay while they search for a job.",
+    className: "md:col-span-2",
+    thumbnail: "/preview-lan.png",
+  },
+   {
+    id: 6,
+    title: "High Job Market Potential",
+    desc: "BYour qualifications should be in demand in Germany’s labor market, such as in engineering, IT, healthcare, or other key sectors.",
     className: "md:col-span-2",
     thumbnail: "/preview-lan.png",
   },

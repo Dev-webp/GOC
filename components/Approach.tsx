@@ -17,7 +17,7 @@ const Approach = () => {
     <section className="w-full py-20">
       <FadeRight>
       <h1 className="heading uppercase">
-        Our <span className="text-gradient">Process</span>
+        Our Onboarding <br/> <span className="text-gradient">Process</span>
       </h1>
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center w-full gap-8"> {/* Increased gap */}
         {/* Existing Cards */}
@@ -66,7 +66,7 @@ const Approach = () => {
         <Card
           title="File submission"
           icon={<AceternityIcon order="Phase 4" />}
-          des="Your application will be submitted online. You will be required to visit the respective embassy for an interview (if asked). You will be prepared for the interview."
+          des="Your application will be submitted online. You will be required to visit the respective embassy for an interview (if asked)."
           arrow={<Arrow />}
         >
           <CanvasRevealEffect
@@ -82,9 +82,9 @@ const Approach = () => {
 
         {/* New Card 2 */}
         <Card
-          title="Visa Approval and Post landing"
+          title="Approval and Post landing"
           icon={<AceternityIcon order="Phase 5" />}
-          des="After your interview, your visa will be granted in 6-8 weeks. You need to be prepared for landing in Germany, along with your job preparedness."
+          des="After your interview, your visa will be granted in 6-8 weeks. You need to be prepared for landing in Germany."
         >
           <CanvasRevealEffect
             animationSpeed={4}
@@ -156,7 +156,7 @@ backgroundColor: "linear-gradient(90deg, rgba(230, 230, 230, 0.3) 0%, rgba(240, 
         )}
       </AnimatePresence>
 
-      <div className="relative z-20 px-6">
+      <div className="relative z-20 px-2">
         <div className="text-center group-hover/canvas-card:-translate-y-4 absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] 
         group-hover/canvas-card:opacity-0 transition duration-200 min-w-40 mx-auto flex items-center justify-center">
           {icon}
@@ -168,7 +168,7 @@ backgroundColor: "linear-gradient(90deg, rgba(230, 230, 230, 0.3) 0%, rgba(240, 
         </h2>
         <p
           className="text-sm opacity-0 group-hover/canvas-card:opacity-100
-         relative z-10 mt-4 group-hover/canvas-card:text-white text-center
+         relative z-50 mt-4 group-hover/canvas-card:text-white text-center
          group-hover/canvas-card:-translate-y-2 transition duration-200"
           style={{ color: "#E4ECFF" }}
         >

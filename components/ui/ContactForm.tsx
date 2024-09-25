@@ -10,8 +10,6 @@ type FormData = {
   phone: string;
   city: string;
   qualification: string;
-  service: string;
-  branch: string;
   maritalStatus: string;
   message: string;
 };
@@ -25,8 +23,6 @@ const ContactForm: React.FC = () => {
     phone: "",
     city: "",
     qualification: "",
-    service: "",
-    branch: "",
     maritalStatus: "",
     message: "",
   });
@@ -49,10 +45,8 @@ const ContactForm: React.FC = () => {
         "entry.500009779": encodeURIComponent(formData.email),          // Email field
         "entry.1714164824": encodeURIComponent(formData.phone),         // Phone field
         "entry.1347024827": encodeURIComponent(formData.city),          // City field
-        "entry.1880711587": encodeURIComponent(formData.qualification), // Qualification field
-        "entry.1016709080": encodeURIComponent(formData.service),       // Service field
-        "entry.1080176603": encodeURIComponent(formData.maritalStatus), // Marital Status field
-        "entry.862314696": encodeURIComponent(formData.branch),         // Branch field
+        "entry.1880711587": encodeURIComponent(formData.qualification),      // Service field
+        "entry.1080176603": encodeURIComponent(formData.maritalStatus),        // Branch field
         "entry.266368811": encodeURIComponent(formData.message),        // Message field
       });
 
@@ -73,8 +67,6 @@ const ContactForm: React.FC = () => {
           phone: "",
           city: "",
           qualification: "",
-          service: "",
-          branch: "",
           maritalStatus: "",
           message: "",
         });
@@ -89,7 +81,7 @@ const ContactForm: React.FC = () => {
 
   return (
       <form
-      className="isolate mt-4 space-y-4 rounded-2xl bg-white p-6 max-w-[50rem] mb-24 ml-6"
+      className="isolate mt-4 space-y-8 rounded-2xl bg-white p-6 max-w-[50rem] mb-24 ml-6"
       onSubmit={handleSubmit}
     >
       {/* First Row: Name and Email */}
@@ -145,71 +137,41 @@ const ContactForm: React.FC = () => {
       </div>
 
       {/* Third Row: Qualification and Service */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div className="border-r border-neutral-400 pr-4">
-          <select
-            name="qualification"
-            value={formData.qualification}
-            onChange={handleChange}
-            className="block w-full border-b border-neutral-300 bg-transparent px-4 py-3 text-sm text-neutral-950 focus:border-neutral-950 focus:outline-none focus:ring-0"
-            required
-          >
-            <option value="">Education</option>
-            <option value="10th">10th</option>
-            <option value="12th">12th</option>
-            <option value="bachelors">Bachelors-Degree</option>
-            <option value="masters">Masters</option>
-            <option value="phd">PhD</option>
-          </select>
-        </div>
-        <div>
-          <select
-            name="service"
-            value={formData.service}
-            onChange={handleChange}
-            className="block w-full border-b border-neutral-300 bg-transparent px-4 py-3 text-sm text-neutral-950 focus:border-neutral-950 focus:outline-none focus:ring-0"
-            required
-          >
-            <option value="">Services</option>
-            <option value="PR">PR-Visa</option>
-            <option value="student">Student-Visa</option>
-            <option value="jobSeeker">Job-Seeker-Visa</option>
-          </select>
-        </div>
-      </div>
+<div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+  <div className="border-r border-neutral-400 pr-0 sm:pr-4">
+    <select
+      name="qualification"
+      value={formData.qualification}
+      onChange={handleChange}
+      className="block w-full border-b border-neutral-300 bg-transparent px-4 py-3 text-sm text-neutral-950 focus:border-neutral-950 focus:outline-none focus:ring-0"
+      required
+    >
+      <option value="">Education</option>
+      <option value="10th">10th</option>
+      <option value="12th">12th</option>
+      <option value="bachelors">Bachelors</option>
+      <option value="masters">Masters</option>
+      <option value="phd">PhD</option>
+    </select>
+  </div>
+  <div>
+    <select
+      name="maritalStatus"
+      value={formData.maritalStatus}
+      onChange={handleChange}
+      className="block w-full border-b border-neutral-300 bg-transparent px-4 py-3 text-sm text-neutral-950 focus:border-neutral-950 focus:outline-none focus:ring-0"
+      required
+    >
+      <option value="">Marital Status</option>
+      <option value="single">Single</option>
+      <option value="married">Married</option>
+    </select>
+  </div>
+</div>
 
-      {/* Fourth Row: Branch and Marital Status */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div className="border-r border-neutral-400 pr-4">
-          <select
-            name="maritalStatus"
-            value={formData.maritalStatus}
-            onChange={handleChange}
-            className="block w-full border-b border-neutral-300 bg-transparent px-4 py-3 text-sm text-neutral-950 focus:border-neutral-950 focus:outline-none focus:ring-0"
-            required
-          >
-            <option value="">Marital Status</option>
-            <option value="single">Single</option>
-            <option value="married">Married</option>
-          </select>
-        </div>
-        
-        <div >
-          <select
-            name="branch"
-            value={formData.branch}
-            onChange={handleChange}
-            className="block w-full border-b border-neutral-300 bg-transparent px-4 py-3 text-sm text-neutral-950 focus:border-neutral-950 focus:outline-none focus:ring-0"
-            required
-          >
-            <option value="">Branch</option>
-            <option value="bangalore">Bangalore</option>
-            <option value="hyderabad">Hyderabad</option>
-          </select>
-        </div>
-      </div>
 
-      {/* Fifth Row: Message */}
+
+      {/* 4th Row: Message */}
       <TextInput
         label="Message"
         name="message"

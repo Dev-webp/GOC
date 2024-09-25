@@ -8,6 +8,7 @@ const loadableComponent = <T extends ComponentType<any>>(importFn: () => Promise
   lazy(() => importFn().then(module => ({ default: module.default as T })));
 
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
+import CheckList from '@/components/CheckList';
 const Test = loadableComponent(() => import('@/components/Test'));
 const Hero = loadableComponent(() => import('@/components/Hero'));
 const Grid = loadableComponent(() => import('@/components/Grid'));
@@ -27,14 +28,13 @@ const Home = () => {
           <div className="mt-10">
             <Test />
           </div>
-          <div className="mt-96 sm:mt-96 md:mt-0 lg:mt-0">
+          <div className="mt-96 sm:mt-96 md:mt-0 lg:mt-4">
             <Hero />
           </div>
-          <div className="mt-28 sm:mt-0 md:mt-28 lg-mt-0  ">
-            <Grid />
-          </div>
+          <Grid />
           <Clients />
           <Experience />
+          <CheckList/>
           <Approach />
           <Form />
           <div className='mb-8'>
