@@ -6,12 +6,12 @@ import { FaGraduationCap, FaBriefcase, FaCalendarAlt, FaLanguage, FaMoneyBillWav
 
 const Experience = () => {
   const icons = [
-    <FaGraduationCap className="text-white text-6xl" />, // For Skilled Professionals
-    <FaBriefcase className="text-white text-6xl" />,     // For Relevant Work Experience
-    <FaCalendarAlt className="text-white text-6xl" />,   // For Age Criteria
-    <FaLanguage className="text-white text-6xl" />,       // For Language Skills
-    <FaMoneyBillWave className="text-white text-6xl" />,   // For Financial Stability
-    <FaChartLine className="text-white text-6xl" />,      // For Job Market Potential
+    <FaGraduationCap className="text-white text-6xl" key="graduation" />, // For Skilled Professionals
+    <FaBriefcase className="text-white text-6xl" key="briefcase" />,     // For Relevant Work Experience
+    <FaCalendarAlt className="text-white text-6xl" key="calendar" />,   // For Age Criteria
+    <FaLanguage className="text-white text-6xl" key="language" />,       // For Language Skills
+    <FaMoneyBillWave className="text-white text-6xl" key="money" />,     // For Financial Stability
+    <FaChartLine className="text-white text-6xl" key="chart" />,         // For Job Market Potential
   ];
 
   return (
