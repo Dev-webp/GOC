@@ -240,7 +240,7 @@ const ContactForm: React.FC = () => {
         />
       </div>
 
-      <Button type="submit" className="mt-4 ml-52 w-50 mx-auto uppercase">Check now</Button>
+      <Button type="submit" className="mt-4 ml-44 sm:ml-44 md:ml-56 lg:ml-56 w-50 mx-auto">Check Now</Button>
 
       {isSubmitted && <p className="mt-4 text-gradient">Form successfully submitted</p>}
     </form>
