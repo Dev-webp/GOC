@@ -33,14 +33,16 @@ const Offices = ({ invert = false, ...props }) => {
                     <br />
                     500038
                     <br />
-                    <span className="text-white-100 font-medium">CONTACT : +91 9160449000</span>
+                    <span className="text-white-100 font-medium">
+                        CONTACT: <a href="tel:+919160449000" className="text-white underline">+91 9160449000</a>
+                    </span>
                 </Office>
             </li>
             <li>
                 <Office name="VJC OVERSEAS (Bangalore)" invert={invert}>
                     Raheja Arcade, 16 & 17,
                     <br />
-                    ground floor,
+                    Ground Floor,
                     <br />
                     5th Block,
                     <br />
@@ -49,19 +51,13 @@ const Offices = ({ invert = false, ...props }) => {
                     Bangalore,India
                     <br />
                     560095
-                    <br /><span className="text-white-100 font-medium">CONTACT : +91 8970667999</span>
+                    <br />
+                    <span className="text-white-100 font-medium">
+                        CONTACT: <a href="tel:+918970667999" className="text-white underline">+91 8970667999</a>
+                    </span>
 
                 </Office>
             </li>
-            {/* <li>
-                <Office name="Phone" invert={invert}>
-                    +91 8970667999
-                    <br />
-                    <Office name="Email" invert={invert}>
-                        vjcoverseas@gmail.com
-                    </Office>
-                </Office>
-            </li> */}
         </ul>
     );
 };

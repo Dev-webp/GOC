@@ -7,7 +7,7 @@ import FadeIn from "./ui/FadeIn";
 
 const Clients = () => {
   return (
-    <section id="testimonials" className="py-32">
+    <section id="testimonials" className="py-24">
       <FadeIn>
       <h1 className="heading uppercase">
         Job Opportunities and Salaries with the <br/>

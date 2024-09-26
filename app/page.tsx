@@ -28,7 +28,7 @@ const Home = () => {
           <div className="mt-10">
             <Test />
           </div>
-          <div className="mt-96 sm:mt-96 md:mt-0 lg:mt-4">
+          <div className="mt-56 sm:mt-2 md:mt-0 lg:mt-4">
             <Hero />
           </div>
           <Grid />

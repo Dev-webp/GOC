@@ -14,7 +14,7 @@ type FormData = {
   message: string;
 };
 
-const GOOGLE_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSfo7shkMQbOZr7gc33gBIXyl2WCqywXwabhPk1yVwywudiYHg/formResponse";
+const GOOGLE_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSdXavQXlwKjP9dYvkYpHOg6-QLWHeI2J2tLNDhYYAsQpw7ofw/formResponse";
 
 const ContactForm: React.FC = () => {
   const [formData, setFormData] = useState<FormData>({
@@ -41,13 +41,13 @@ const ContactForm: React.FC = () => {
       e.preventDefault();
 
       const formBody = new URLSearchParams({
-        "entry.1491673830": encodeURIComponent(formData.name),           // Name field
-        "entry.500009779": encodeURIComponent(formData.email),          // Email field
-        "entry.1714164824": encodeURIComponent(formData.phone),         // Phone field
-        "entry.1347024827": encodeURIComponent(formData.city),          // City field
-        "entry.1880711587": encodeURIComponent(formData.qualification),      // Service field
-        "entry.1080176603": encodeURIComponent(formData.maritalStatus),        // Branch field
-        "entry.266368811": encodeURIComponent(formData.message),        // Message field
+        "entry.1510645988": encodeURIComponent(formData.name),           // Name field
+        "entry.938203700": encodeURIComponent(formData.email),          // Email field
+        "entry.1549808739": encodeURIComponent(formData.phone),         // Phone field
+        "entry.1578212786": encodeURIComponent(formData.city),          // City field
+        "entry.505635382": encodeURIComponent(formData.qualification),      // Service field
+        "entry.17107752": encodeURIComponent(formData.maritalStatus),        // Branch field
+        "entry.1610243820": encodeURIComponent(formData.message),        // Message field
       });
 
       try {

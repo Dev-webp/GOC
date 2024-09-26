@@ -17,7 +17,7 @@ const Experience = () => {
   return (
     <section id="test">
       <FadeIn>
-        <div className="py-12 w-full"> {/* Reduced top/bottom padding */}
+        <div className="py-2 w-full"> {/* Reduced top/bottom padding */}
           <h1 className="heading uppercase">
             Who Can Apply for the <br/>
             <span className="text-gradient uppercase"> Germany Opportunity Card</span>

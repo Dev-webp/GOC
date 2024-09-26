@@ -8,13 +8,17 @@ import { SpeedInsights } from "@vercel/speed-insights/next"; // Import the Speed
 const inter = Inter({ subsets: ["latin"], display: "swap" });
 
 export const metadata: Metadata = {
-  title: "Germany Opportunity Card",
-  description: "Germany Opportunity Card",
+  title: "Germany Opportunity Card Eligibility Job Seeker Best Visa Immigration Consultants in Hyderabad Bangalore",
+  description: "Germany Opportunity Card is the best way to settle in Germany and Check Germany Opportunity Card Eligibility also apply  online with Best Visa Immigration Consultants in Hyderabad and Bangalore also get to know the huge benefits of Germany Opportunity Card",
   keywords: "Germany, Opportunity Card, visa, immigration, work, travel",
-  authors: [{ name: "VJC Overseas" }],
   creator: "VJC Overseas",
   publisher: "VJC Overseas",
 };
+
+export const viewport = {
+  themeColor: "#000000", // Set a theme color for mobile browsers
+};
+
 
 export default function RootLayout({
   children,

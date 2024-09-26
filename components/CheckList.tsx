@@ -1,8 +1,10 @@
 import React from 'react';
 import { FaPassport, FaClipboardCheck, FaFileContract, FaLanguage, FaDollarSign, FaUserTie, FaHeart, FaHome, FaEnvelope, FaIdCard } from 'react-icons/fa'; // Importing relevant icons
+import FadeRight from './ui/FadeRight';
 
 const CheckList: React.FC = () => {
   return (
+    <FadeRight>
     <div className="flex flex-col items-center  bg-black text-white py-32">
       <h1 className="heading text-3xl font-bold text-center uppercase">
         Document Checklist for the
@@ -42,7 +44,7 @@ const CheckList: React.FC = () => {
           </div>
           <span>Financial Proof</span>
         </li>
-        <li className="flex items-center space-x-2 bg-gradient-to-r from-sky-900 to-orange-900 p-4 rounded-lg">
+        <li className="flex items-center space-x-2 bg-gradient-to-r  from-violet-900 to-indigo-500 p-4 rounded-lg">
           <div className="text-6xl text-white">
             <FaUserTie />
           </div>
@@ -70,6 +72,7 @@ const CheckList: React.FC = () => {
       </ul>
 
     </div>
+    </FadeRight>
   );
 };
 

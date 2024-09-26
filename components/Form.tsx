@@ -25,8 +25,9 @@ const ContactPage: React.FC = () => {
               {/* <h2 className="font-display text-base font-semibold text-neutral-300">Email us</h2> */}
               <dl className="mt-2 grid grid-cols-1 gap-8 text-sm sm:grid-cols-2">
                 {[
+                  ["Email", "info@vjcoverseas.com"],
                   ["Email", "vjcbangalore@gmail.com"],
-                  ["Press", "vjcoverseas@gmail.com"],
+                  
                 ].map(([label, email]) => (
                   <div key={email}>
                     <dt className="font-semibold text-neutral-300">{label}</dt>

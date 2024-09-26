@@ -14,7 +14,7 @@ const Arrow = ({ color = "white" }: { color?: string }) => (
 
 const Approach = () => {
   return (
-    <section className="w-full py-20">
+    <section className="w-full py-2">
       <FadeRight>
       <h1 className="heading uppercase">
         Our Onboarding <br/> <span className="text-gradient">Process</span>

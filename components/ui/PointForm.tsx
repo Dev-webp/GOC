@@ -18,7 +18,7 @@ type FormData = {
 };
 
 // Updated Google Form URL
-const GOOGLE_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSf4ubmtZdcplFujO9oNUDEZItfWAF7W2O80wu2nbk5J39GQaQ/formResponse";
+const GOOGLE_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSfwDN-_PIXgKl77MxbMLuG51cMJmg-4GJm29wAurxdaOEd0wg/formResponse";
 
 const ContactForm: React.FC = () => {
   const [formData, setFormData] = useState<FormData>({
@@ -48,16 +48,16 @@ const ContactForm: React.FC = () => {
       e.preventDefault();
 
       const formBody = new URLSearchParams({
-        "entry.1445379067": encodeURIComponent(formData.name),
-        "entry.2006965070": encodeURIComponent(formData.email),
-        "entry.1521756420": encodeURIComponent(formData.phone),
-        "entry.1501039797": encodeURIComponent(formData.city),
-        "entry.1779058505": encodeURIComponent(formData.qualification),
-        "entry.843054382": encodeURIComponent(formData.maritalStatus),
-        "entry.983220986": encodeURIComponent(formData.age), // New entry for Age
-        "entry.1226480932": encodeURIComponent(formData.englishProficiency), // New entry for English Proficiency
-        "entry.1270756796": encodeURIComponent(formData.workExperience),
-        "entry.729844265": encodeURIComponent(formData.message),
+        "entry.1642545115": encodeURIComponent(formData.name),
+        "entry.1236892299": encodeURIComponent(formData.email),
+        "entry.1431943453": encodeURIComponent(formData.phone),
+        "entry.988033036": encodeURIComponent(formData.city),
+        "entry.1036873680": encodeURIComponent(formData.qualification),
+        "entry.981719167": encodeURIComponent(formData.maritalStatus),
+        "entry.408899124": encodeURIComponent(formData.age), // New entry for Age
+        "entry.1914497726": encodeURIComponent(formData.englishProficiency), // New entry for English Proficiency
+        "entry.1377078637": encodeURIComponent(formData.workExperience),
+        "entry.1905941527": encodeURIComponent(formData.message),
       });
 
       try {
