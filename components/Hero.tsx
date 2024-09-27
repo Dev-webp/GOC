@@ -1,5 +1,6 @@
 import { FaBriefcase, FaGlobe, FaHandshake, FaHeart, FaUserShield, FaMagento } from "react-icons/fa6";
 import FadeLeftStagger from "./ui/FadeLeftStagger";
+import FadeIn from "./ui/FadeIn";
 
 
 const Hero = () => {
@@ -9,12 +10,13 @@ const Hero = () => {
         <div className="flex justify-center relative">
           <div className="max-w-[89vw] md:max-w-6xl lg:max-w-7xl flex flex-col items-center justify-center">
             {/* Header */}
+            <FadeIn>
             <h1 className="heading uppercase">
               Benefits of
               <br />
               <span className="text-gradient"> Germany Opportunity Card</span>
             </h1>
-
+            </FadeIn>
             {/* Benefits Points with Fade Left Stagger */}
             <div className="mt-10">
             <FadeLeftStagger>

@@ -55,13 +55,13 @@ const Test = () => {
         {isCallNowVisible && (
             <div className="block md:hidden fixed top-36 left-0 w-full bg-slate-900 p-4 text-center">
               <a
-                href="tel:8970667999"  // This triggers the call
+                href="tel:9160449000"  // This triggers the call
                 className="text-white font-semibold uppercase tracking-widest text-sm flex items-center justify-center" // Flexbox for alignment
               >
                 <BsTelephoneForward className="text-white text-xl mr-2" /> {/* Margin to the right of the icon */}
                 
                 <br />
-                <span className='lining-nums tracking-normal font-bold text-lg text-gray-100'>8970667999</span>
+                <span className='lining-nums tracking-normal font-bold text-lg text-gray-100'>9160449000</span>
               </a>
             </div>
           )}
@@ -70,11 +70,11 @@ const Test = () => {
         {/* Contact Button hidden on larger devices */}
         <div className="hidden md:flex items-center py-1 px-2 rounded-md mt-8">
           <a
-            href="tel:8970667999"  // This triggers the call
+            href="tel:9160449000"  // This triggers the call
             className="text-white font-semibold uppercase tracking-widest text-sm"
           >
             <span className='ml-3'>Contact</span><br />
-            <span className='lining-nums tracking-normal font-semibold text-gray-300 text-xs'>+91<span className='text-black'>#</span>8970667999</span>
+            <span className='lining-nums tracking-normal font-semibold text-gray-300 text-xs'>+91<span className='text-black'>#</span>9160449000</span>
           </a>
         </div>
       </div>
