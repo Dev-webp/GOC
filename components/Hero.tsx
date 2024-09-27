@@ -4,7 +4,7 @@ import FadeLeftStagger from "./ui/FadeLeftStagger";
 
 const Hero = () => {
   return (
-    <section id="why">
+    <section id="why"  className="scroll-mt-14 md:scroll-m-0 sm:scroll-mt-24">
       <div className="relative pb-28 py-16">
         <div className="flex justify-center relative">
           <div className="max-w-[89vw] md:max-w-6xl lg:max-w-7xl flex flex-col items-center justify-center">

@@ -3,6 +3,7 @@ import { workExperience } from "@/data";
 import { Button } from "./ui/MovingBorders";
 import FadeIn from "./ui/FadeIn";
 import { FaGraduationCap, FaBriefcase, FaCalendarAlt, FaLanguage, FaMoneyBillWave, FaChartLine } from "react-icons/fa"; // Import different icons
+import FadeLeftList from "./ui/FadeLeftList";
 
 const Experience = () => {
   const icons = [
@@ -15,14 +16,16 @@ const Experience = () => {
   ];
 
   return (
-    <section id="test">
-      <FadeIn>
+    <section id="test" className="scroll-mt-20 md:scroll-m-12 sm:scroll-mt-28">
+      
         <div className="py-2 w-full"> {/* Reduced top/bottom padding */}
+         <FadeIn>
           <h1 className="heading uppercase">
             Who Can Apply for the <br/>
             <span className="text-gradient uppercase"> Germany Opportunity Card</span>
           </h1>
-
+        </FadeIn>
+        <FadeLeftList>
           {/* Adjust grid sizes for different screen sizes */}
           <div className="w-full mt-16 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 lg:gap-8"> {/* Reduced gaps */}
             {workExperience.map((card, index) => (
@@ -52,8 +55,9 @@ const Experience = () => {
               </Button>
             ))}
           </div>
+          </FadeLeftList>
         </div>
-      </FadeIn>
+      
     </section>
   );
 };

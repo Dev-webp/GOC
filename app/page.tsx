@@ -8,12 +8,12 @@ const loadableComponent = <T extends ComponentType<any>>(importFn: () => Promise
   lazy(() => importFn().then(module => ({ default: module.default as T })));
 
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
-import CheckList from '@/components/CheckList';
 const Test = loadableComponent(() => import('@/components/Test'));
 const Hero = loadableComponent(() => import('@/components/Hero'));
 const Grid = loadableComponent(() => import('@/components/Grid'));
 const Clients = loadableComponent(() => import('@/components/Clients'));
 const Experience = loadableComponent(() => import('@/components/Experience'));
+const CheckList = loadableComponent(() => import('@/components/CheckList'));
 const Approach = loadableComponent(() => import('@/components/Approach'));
 const Form = loadableComponent(() => import('@/components/Form'));
 const Footer = loadableComponent(() => import('@/components/Footer'));

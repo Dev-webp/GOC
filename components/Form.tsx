@@ -6,14 +6,13 @@ import Offices from "./ui/Offices";
 import Border from "./ui/Border";
 import Link from "next/link";
 import SocialMedia from "./ui/SocialMedia";
-import ContactForm from "./ui/ContactForm";
 import PointForm from "./ui/PointForm";
 
 const ContactPage: React.FC = () => {
   return (
     <div>
       <FadeIn>
-        <section className="contact-section mt-8 grid grid-cols-1 gap-8 md:grid-cols-2" id="contact">
+        <section className="contact-section mt-8 grid grid-cols-1 gap-8 md:grid-cols-2" >
           <div>
             <h2 className="font-display mt-5 text-base font-semibold uppercase text-neutral-300">Our office</h2>
             <p className="mt-6 text-base text-neutral-300">
@@ -46,8 +45,8 @@ const ContactPage: React.FC = () => {
               <SocialMedia className="mt-4 mb-6 gap-3" />
             </Border>
           </div>
-          <div>
-            <PointForm/>
+          <div id="contact" className="scroll-mt-14 md:scroll-m-12 sm:scroll-mt-24">
+            <PointForm />
           </div>
         </section>
       </FadeIn>

@@ -5,6 +5,7 @@ import { CanvasRevealEffect } from "./ui/CanvasRevealEffect";
 
 import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
 import FadeRight from "./ui/FadeRight";
+import FadeIn from "./ui/FadeIn";
 
 const Arrow = ({ color = "white" }: { color?: string }) => (
   <div className="flex justify-center items-center">
@@ -15,10 +16,12 @@ const Arrow = ({ color = "white" }: { color?: string }) => (
 const Approach = () => {
   return (
     <section className="w-full py-2">
-      <FadeRight>
+      <FadeIn>
       <h1 className="heading uppercase">
         Our Onboarding <br/> <span className="text-gradient">Process</span>
       </h1>
+      </FadeIn>
+      <FadeRight>
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center w-full gap-8"> {/* Increased gap */}
         {/* Existing Cards */}
        <Card

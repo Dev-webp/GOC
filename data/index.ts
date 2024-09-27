@@ -170,39 +170,6 @@ export const testimonials = [
 
 ];
 
-export const companies = [
-  {
-    id: 1,
-    name: "cloudinary",
-    img: "/cloud.svg",
-    nameImg: "/cloudName.svg",
-  },
-  {
-    id: 2,
-    name: "appwrite",
-    img: "/app.svg",
-    nameImg: "/appName.svg",
-  },
-  {
-    id: 3,
-    name: "HOSTINGER",
-    img: "/host.svg",
-    nameImg: "/hostName.svg",
-  },
-  {
-    id: 4,
-    name: "stream",
-    img: "/s.svg",
-    nameImg: "/streamName.svg",
-  },
-  {
-    id: 5,
-    name: "docker.",
-    img: "/dock.svg",
-    nameImg: "/dockerName.svg",
-  },
-];
-
 export const workExperience = [
   {
     id: 1,
@@ -248,20 +215,3 @@ export const workExperience = [
   },
 ];
 
-export const socialMedia = [
-  {
-    id: 1,
-    img: "/insta.svg",
-    link: "https://www.instagram.com/vjc_overseas_bangalore?utm_source=qr&igsh=MXZzNXY3dGV1YXg1bw== ", // Instagram URL
-  },
-  {
-    id: 2,
-    img: "/twit.svg",
-    link: "https://x.com/VJCOVERSEAS?t=aRM7qjBL9saJzNwyDzuCCg&s=09", // Twitter URL
-  },
-  {
-    id: 3,
-    img: "/link.svg",
-    link: "https://www.linkedin.com/company/vjc-overseas/", // LinkedIn URL
-  },
-];
