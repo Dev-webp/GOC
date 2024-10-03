@@ -3,11 +3,9 @@ import clsx from "clsx";
 import {
     BsFacebook,
     BsTwitter,
-    BsGithub,
     BsYoutube,
     BsLinkedin,
     BsInstagram,
-    BsWhatsapp,
 } from "react-icons/bs";
 
 export const SocialMediaProfiles = [
@@ -31,11 +29,11 @@ export const SocialMediaProfiles = [
         href: "https://www.youtube.com/@vjcoverseas9434",
         icon: BsYoutube,
     },
-    // {
-    //     title: "Whatsapp",
-    //     href: "https://wa.me/918970667999?text=Hello%2C%20I%20need%20more%20information",
-    //     icon: BsWhatsapp,
-    // },
+    {
+        title: "Facebook",
+        href: "https://www.facebook.com/VJCOVERSEAS/",
+        icon: BsFacebook,
+    },
 ];
 
 const SocialMedia = ({ className, invert = false }) => {
