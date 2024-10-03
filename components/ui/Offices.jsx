@@ -22,7 +22,7 @@ const Offices = ({ invert = false, ...props }) => {
         <ul role="list" {...props}>
 
             <li>
-                <Office name="VJC OVERSEAS (Hydrabad)" invert={invert}>
+                <Office name="VJC OVERSEAS (Hyderabad)" invert={invert}>
                     62/A,Ground Floor,
                     <br />
                     Sundari Reddy Bhavan, Fresh Mart, Vengalrao Nagar,

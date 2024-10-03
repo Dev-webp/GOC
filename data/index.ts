@@ -210,7 +210,7 @@ export const workExperience = [
    {
     id: 6,
     title: "High Job Market Potential",
-    desc: "BYour qualifications should be in demand in Germany’s labor market, such as in engineering, IT, healthcare, or other key sectors.",
+    desc: "Your qualifications should be in demand in Germany’s labor market, such as in engineering, IT, healthcare, or other key sectors.",
     className: "md:col-span-2",
     thumbnail: "/preview-lan.png",
   },
