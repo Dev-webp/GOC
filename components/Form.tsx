@@ -16,7 +16,7 @@ const ContactPage: React.FC = () => {
           <div>
             <h2 className="font-display mt-5 text-base font-semibold uppercase text-neutral-300">Our office</h2>
             <p className="mt-6 text-base text-neutral-300">
-              Prefer doing things in person? Here's where you can find us.
+              Prefer doing things in person? Here&apos;s where you can find us.
             </p>
             <Offices className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2" />
 
