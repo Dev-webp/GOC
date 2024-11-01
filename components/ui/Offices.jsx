@@ -23,16 +23,18 @@ const Offices = ({ invert = false, ...props }) => {
 
             <li>
                 <Office name="VJC OVERSEAS (Hyderabad)" invert={invert}>
-                    62/A,Ground Floor,
-                    <br />
-                    Sundari Reddy Bhavan, Fresh Mart, Vengalrao Nagar,
-                    <br />
-                    Sanjeeva Reddy Nagar,
-                    <br />
-                    Hyderabad, Telangana
-                    <br />
-                    500038
-                    <br />
+                    <a href="https://maps.app.goo.gl/44jNCGWZKLPU5usM8">
+                        62/A,Ground Floor,
+                        <br />
+                        Sundari Reddy Bhavan, Fresh Mart, Vengalrao Nagar,
+                        <br />
+                        Sanjeeva Reddy Nagar,
+                        <br />
+                        Hyderabad, Telangana
+                        <br />
+                        500038
+                        <br />
+                    </a>
                     <span className="text-white-100 font-medium">
                         CONTACT: <a href="tel:+919160449000" className="text-white underline">+91 9160449000</a>
                     </span>
@@ -40,18 +42,20 @@ const Offices = ({ invert = false, ...props }) => {
             </li>
             <li>
                 <Office name="VJC OVERSEAS (Bangalore)" invert={invert}>
-                    Raheja Arcade, 16 & 17,
-                    <br />
-                    Ground Floor,
-                    <br />
-                    5th Block,
-                    <br />
-                    Koramangala,
-                    <br />
-                    Bangalore,India
-                    <br />
-                    560095
-                    <br />
+                    <a href="https://maps.app.goo.gl/UwcaqmK4K1MPZAav7">
+                        Raheja Arcade, 16 & 17,
+                        <br />
+                        Ground Floor,
+                        <br />
+                        5th Block,
+                        <br />
+                        Koramangala,
+                        <br />
+                        Bangalore,India
+                        <br />
+                        560095
+                        <br />
+                    </a>
                     <span className="text-white-100 font-medium">
                         CONTACT: <a href="tel:+918970667999" className="text-white underline">+91 8970667999</a>
                     </span>
